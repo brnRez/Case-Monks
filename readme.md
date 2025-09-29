@@ -15,7 +15,7 @@ tem a liberdade de modificar estes dados conforme achar necessário.
 
 ## Abordagem Utilizada
 
-A fim de deixar o processo melhor simplificado também para execução, optei por utilizar a biblioteca Pandas para criação de Dataframes para consumo dos dados em CSV, desta forma, seria possível apresentá-los devidamente para o Front-end, assim como também efetuar a autenticação dos acessos na planilha "Users.csv".
+A fim de simplificar o processo para execução, optei por utilizar a biblioteca Pandas para criação de Dataframes para consumo dos dados em CSV, desta forma, seria possível apresentá-los devidamente para o Front-end, assim como também efetuar a autenticação dos acessos na planilha "Users.csv".
 
 O Consumo do Front-End se dá por meio da paginação dos dados fornecidos, visto que o relatório se encontra com aproximadamente Um Milhão de linhas, carregá-lo de uma vez seria danoso para a performance, por conta disso, optei por seguir desta forma. Desta maneira, os dados são exibidos por páginas de 100 linhas cada.
 
