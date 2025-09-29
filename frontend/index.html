@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics - Case Monks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <p id="login-error" class="error-message"></p>
+        </form>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <header>
+            <h1>Metrics - Relatório Monks</h1>
+            <button id="logout-button">Sair</button>
+        </header>
+    
+        <main>
+            <div id="filter-controls">
+                <div class="date-filter">
+                    <label for="start-date">Data Início:</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="date-filter">
+                    <label for="end-date">Data Fim:</label>
+                    <input type="date" id="end-date">
+                </div>
+                <button id="filter-button">Filtrar</button>
+                <button id="clear-filter-button">Limpar Filtros</button>
+            </div>
+            <div id="table-container">
+            </div>
+            <div id="pagination-controls" class="pagination-container">
+            </div>
+            <div id="table-container">
+            </div>
+            <div id="pagination-controls">
+            </div>
+        </main>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
