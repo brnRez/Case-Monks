@@ -1,0 +1,16 @@
+
+services:
+ backend:
+  build: .
+  ports:
+     - "8000:8000"
+  volumes:
+    - ./app:/app/app
+    - ./data:/app/data
+
+ frontend:
+  image: nginx:1.29.1-alpine
+  ports:
+    - "8080:80"
+  volumes:
+    - ./frontend:/usr/share/nginx/html
