@@ -1,0 +1,8 @@
+/.dockerignore
+/.venv
+/app
+/data
+/docker-compose.yml
+/Dockerfile
+/frontend
+/requirements.txt
